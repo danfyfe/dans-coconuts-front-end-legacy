@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #edd793; */
 }
 
 code {
@@ -19,20 +20,36 @@ code {
   height: 40vh;
 }
 
+.sun {
+  background-color: #FDB813;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  margin: 2%;
+}
+
 .water {
   background-color: #1f9fa9;
   height: 15vh;
 }
 
 .sand {
+  position: relative;
   background-color: #edd793;
   height: 45vh;
 }
 
-.sun {
-  background-color: #FDB813;
-  height: 20vh;
-  width: 20vh;
-  border-radius: 100%;
-  margin: 2%;
+.tree-container {
+  /* overflow: hidden; */
+  /* position: relative; */
+  background-image: url('https://i.imgur.com/LQlH63o.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100px;
+}
+
+#palm-tree {
+  /* height: 50vh; */
+  /* position: absolute; */
+  /* right: -45vw; */
 }

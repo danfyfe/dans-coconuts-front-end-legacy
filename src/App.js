@@ -17,10 +17,8 @@ function App() {
       </div>
 
       <div className='sand'>
-        <div className='tree'>
-          <div className=''>
-            
-          </div>
+        <div className='tree-container'>
+          
         </div>
       </div>
 
@@ -29,3 +27,5 @@ function App() {
 }
 
 export default App;
+
+//   <img id='palm-tree' src='https://i.imgur.com/LQlH63o.png' alt='palm tree'/>
