@@ -14,5 +14,17 @@ code {
 
 
 .sky {
+  /* background-color: #d2e2e1; */
+  background-color: #defaf8;
+  height: 40vh;
+}
 
+.water {
+  background-color: #1f9fa9;
+  height: 20vh;
+}
+
+.sand {
+  background-color: #edd793;
+  height: 40vh;
 }

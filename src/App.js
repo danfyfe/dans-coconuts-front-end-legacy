@@ -5,15 +5,19 @@ function App() {
   return (
     <div className='main-wrapper d-flex flex-column'>
       <div className='sky'>
-        hi
+
+        <div className='sun'>
+
+        </div>
+
       </div>
 
       <div className='water'>
-        hi
+
       </div>
 
       <div className='sand'>
-        hi
+      
       </div>
 
     </div>
