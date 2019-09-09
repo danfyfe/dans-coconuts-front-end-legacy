@@ -21,10 +21,18 @@ code {
 
 .water {
   background-color: #1f9fa9;
-  height: 20vh;
+  height: 15vh;
 }
 
 .sand {
   background-color: #edd793;
-  height: 40vh;
+  height: 45vh;
+}
+
+.sun {
+  background-color: #FDB813;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  margin: 2%;
 }

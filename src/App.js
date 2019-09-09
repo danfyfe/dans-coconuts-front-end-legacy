@@ -17,7 +17,11 @@ function App() {
       </div>
 
       <div className='sand'>
-      
+        <div className='tree'>
+          <div className=''>
+            
+          </div>
+        </div>
       </div>
 
     </div>
