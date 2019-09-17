@@ -89,7 +89,7 @@ code {
   left: 60vw;
   bottom: 55vh;
   animation-name: shake;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-delay: 1s;
 
   animation-iteration-count: infinite;
@@ -116,7 +116,7 @@ code {
 
 @keyframes drop-coconut {
   0% {
-    bottom: 56vh;
+    bottom: 55.5vh;
   }
   100% {
     bottom: 21vh;
