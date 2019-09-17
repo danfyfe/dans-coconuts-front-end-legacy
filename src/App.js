@@ -10,12 +10,6 @@ function App() {
     setTimeout(breakCoconut,500)
   }
 
-  const resetShake = () => {
-    const fullCoconut = document.querySelector('.full-coconut')
-    setTimeout( () => {
-      fullCoconut.animationName = 'shake';
-    }, 1000)
-  }
 
   const breakCoconut = () => {
     const fullCoconut = document.querySelector('.falling')
@@ -34,17 +28,30 @@ function App() {
     titleText.innerText = "Dan's Coconuts"
     titleText.className = 'title-text'
 
-
     treeContainer.appendChild(leftHalfCoconut)
     treeContainer.appendChild(rightHalfCoconut)
 
     treeContainer.appendChild(titleText)
 
-
-
-
     fullCoconut.remove()
 
+    renderFlamingo()
+  }
+
+  const renderFlamingo = () => {
+    const sand = document.querySelector('.sand')
+    const flamingo = document.createElement('img')
+    flamingo.className='flamingo'
+    flamingo.src='https://i.imgur.com/rqRhHlL.png'
+
+    const speechBubble = document.createElement('div')
+    speechBubble.className='speech-bubble'
+    speechBubble.innerText = 'Sup?'
+    sand.appendChild(flamingo)
+
+    setTimeout( () => {
+      sand.appendChild(speechBubble)
+    }, 4000)
   }
 
   return (
@@ -59,15 +66,19 @@ function App() {
 
       <div className='water'>
 
+
       </div>
 
       <div className='sand'>
+
+  
+
         <div className='tree-container'>
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
           <img id='full-coconut' className='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut' onClick={dropCoconut}/>
         </div>
       </div>
-      
+
     </div>
 
   );
