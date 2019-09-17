@@ -63,7 +63,8 @@ code {
 }
 
 .water {
-  background-color: #1f9fa9;
+  /* background-color: #1f9fa9; */
+  background-color: #2db8c2;
   height: 15vh;
 }
 
