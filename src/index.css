@@ -44,6 +44,11 @@ code {
     left: 38vw !important;
     font-size: 500% !important;
   }
+
+  .flamingo {
+    left: -10vw !important;
+  }
+
 }
 
 
@@ -167,14 +172,16 @@ code {
   height: 20vh;
   position: absolute;
   top: 10vh;
-  left: 10vw;
+  left: -40vw;
   animation-name: flamingo-enter, flamingo-walk;
   animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes flamingo-enter {
   from {
-    left: -10vw;
+    left: -20vw;
   }
   to {
     left: 10vw;
@@ -195,17 +202,15 @@ code {
     transform: rotate(15deg);
   }
   40% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
   50% {
     transform: rotate(10deg);
   }
   80% {
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
   }
 }
-
-
 
 .speech-bubble {
   background: #efefef;
@@ -214,13 +219,13 @@ code {
     font-size: 1.2rem;
     line-height: 1.3;
     margin: 0 auto 40px;
-    max-width: 5vw;
+    width: 5vw;
+    min-width: 75px;
+    max-width: 10vw;
     padding: 15px;
     position: relative;
     left: -35vw;
     top: -2vh;
-    /* animation-name: speech-bubble;
-    animation-duration: 0.5s; */
 }
 
 .speech-bubble::after {
@@ -229,22 +234,15 @@ code {
     bottom: -20px;
     content: "";
     position: absolute;
-    right: 10;
-    /* animation-name: speech-bubble;
-    animation-duration: 0.5s; */
+    right: 10px;
 }
 
 .speech-bubble p {
     margin: 0 0 10px;
 }
+
 .speech-bubble p:last-of-type {
     margin-bottom: 0;
 }
 
-@keyframes speech-bubble {
-  from {
-    height: 0px;
-  }
-
-}
 

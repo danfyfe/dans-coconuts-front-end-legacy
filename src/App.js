@@ -51,7 +51,7 @@ function App() {
 
     setTimeout( () => {
       sand.appendChild(speechBubble)
-    }, 4000)
+    }, 5000)
   }
 
   return (
@@ -71,7 +71,7 @@ function App() {
 
       <div className='sand'>
 
-  
+
 
         <div className='tree-container'>
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
