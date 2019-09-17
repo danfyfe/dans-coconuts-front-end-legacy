@@ -18,7 +18,9 @@ function App() {
 
       <div className='sand'>
         <div className='tree-container'>
-          
+          <img id='coconut-tree'src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
+          <img id='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut'/>
+          <img id='half-coconut' src='https://i.imgur.com/r7eQv0P.png' alt='half coconut'/>
         </div>
       </div>
 
