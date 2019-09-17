@@ -13,10 +13,38 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: gilligan;
+  src: url(./fonts/GILLIGAN.TTF);
+}
+
 #root {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .full-coconut, .falling {
+    left: 53vw !important;
+  }
+
+
+  .left-half {
+    left: 48vw !important;
+  }
+
+  .right-half {
+    left: 58vw !important;
+    transform: rotate(-90deg);
+  }
+
+  .title-text {
+    left: 38vw !important;
+    font-size: 500% !important;
+  }
 }
 
 
@@ -46,7 +74,6 @@ code {
 }
 
 .tree-container {
-  /* overflow: hidden; */
 }
 
 #coconut-tree {
@@ -54,20 +81,34 @@ code {
   position: absolute;
   left: 50vw;
   bottom: 25vh;
-  /* position: absolute; */
-  /* right: -45vw; */
-  /* overflow: hidden;
-  height: 90vh; */
 }
 
-#full-coconut {
+.full-coconut {
   height: 8vh;
   position: absolute;
   left: 60vw;
   bottom: 55vh;
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-delay: 1s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-5deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
 }
 
 .falling {
+  height: 8vh;
+  position: absolute;
+  left: 60vw;
+  bottom: 55vh;
   animation-name: drop-coconut;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -81,8 +122,6 @@ code {
     bottom: 21vh;
   }
 }
-
-
 
 .half-coconut {
   height: 8vh;
@@ -98,3 +137,26 @@ code {
   left: 70vw;
   transform: rotate(-90deg);
 }
+
+.title-text {
+  font-family: gilligan;
+  font-size: 200%;
+  text-align: center;
+  position: absolute;
+  top: -48vh;
+  left: 40vw;
+  animation-name: title-text-appear;
+  animation-duration: 0.5s;
+}
+
+@keyframes title-text-appear {
+  from {
+    top: 0vh;
+    transform: scale(.25);
+  }
+  to {
+
+  }
+}
+
+
