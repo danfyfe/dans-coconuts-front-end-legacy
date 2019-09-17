@@ -66,10 +66,37 @@ function App() {
 
       <div className='water'>
 
+      <div className='d-flex flex-column'>
+
+        <div>
+          <div className='wave'>
+            ~~~~~~
+          </div>
+        </div>
+
+        <div className='d-flex justify-content-center'>
+          <div className='wave'>
+            ~~~~~~~~~~
+          </div>
+        </div>
+
+        <div className='d-flex justify-content-end'>
+          <div className='wave'>
+            ~~~~~~
+          </div>
+        </div>
+
+      </div>
 
       </div>
 
       <div className='sand'>
+      
+        <div className='tide'>
+
+        </div>
+
+
 
 
 
