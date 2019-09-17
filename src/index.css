@@ -91,8 +91,11 @@ code {
   animation-name: shake;
   animation-duration: 3s;
   animation-delay: 1s;
-
   animation-iteration-count: infinite;
+}
+
+.full-coconut:hover {
+  cursor: pointer;
 }
 
 @keyframes shake {
