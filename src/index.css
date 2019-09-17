@@ -63,13 +63,38 @@ code {
 #full-coconut {
   height: 8vh;
   position: absolute;
-  left: 70vw;
-  bottom: 21vh;
+  left: 60vw;
+  bottom: 55vh;
 }
 
-#half-coconut {
+.falling {
+  animation-name: drop-coconut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drop-coconut {
+  from {
+    bottom: 55vh;
+  }
+  to {
+    bottom: 21vh;
+  }
+}
+
+
+
+.half-coconut {
   height: 8vh;
   position: absolute;
-  left: 55vw;
   bottom: 22vh;
+}
+
+.left-half {
+  left: 55vw;
+}
+
+.right-half {
+  left: 70vw;
+  transform: rotate(-90deg);
 }
