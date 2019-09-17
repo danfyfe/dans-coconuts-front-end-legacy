@@ -31,7 +31,6 @@ code {
     left: 53vw !important;
   }
 
-
   .left-half {
     left: 48vw !important;
   }
@@ -116,10 +115,10 @@ code {
 }
 
 @keyframes drop-coconut {
-  from {
-    bottom: 55vh;
+  0% {
+    bottom: 56vh;
   }
-  to {
+  100% {
     bottom: 21vh;
   }
 }
