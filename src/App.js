@@ -25,7 +25,7 @@ function App() {
         fishWater.remove()
       }, 1000)
 
-    }, 6000)
+    }, 8000)
 
     // setInterval(() => {
     //   fishWater.remove()
