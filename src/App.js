@@ -1,8 +1,43 @@
-import React, {  } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
 
+  useEffect(() => {
+    const fishDiv = document.querySelector('#fish-div')
+    const fishWater = document.createElement('div')
+    fishWater.id='fish-water'
+    fishWater.innerText = '~~~'
+
+    const fish = document.createElement('img')
+    fish.src = 'https://i.imgur.com/s8dsRWX.png'
+    fish.id = 'fish'
+
+    setInterval(() => {
+      fishDiv.appendChild(fishWater)
+      fishDiv.appendChild(fish)
+      setTimeout(() => {
+        fish.remove()
+        // fishWater.remove()
+      }, 900)
+
+      setTimeout(() => {
+        fishWater.remove()
+      }, 1000)
+
+    }, 6000)
+
+    // setInterval(() => {
+    //   fishWater.remove()
+    //   fish.remove()
+    // }, 2500)
+
+
+
+
+
+    // <div id='fish-water' className='fish-water'>~~~</div>
+  })
 
   const dropCoconut = () => {
     const fullCoconut = document.querySelector('.full-coconut')
@@ -44,14 +79,15 @@ function App() {
     flamingo.className='flamingo'
     flamingo.src='https://i.imgur.com/rqRhHlL.png'
 
-    const speechBubble = document.createElement('div')
-    speechBubble.className='speech-bubble'
-    speechBubble.innerText = 'Sup?'
     sand.appendChild(flamingo)
+    // const speechBubble = document.createElement('div')
+    // speechBubble.className='speech-bubble'
+    // speechBubble.innerText = 'Sup?'
+    //
+    // setTimeout( () => {
+    //   sand.appendChild(speechBubble)
+    // }, 5000)
 
-    setTimeout( () => {
-      sand.appendChild(speechBubble)
-    }, 5000)
   }
 
   return (
@@ -74,6 +110,10 @@ function App() {
           </div>
         </div>
 
+        <div id="fish-div">
+
+        </div>
+
         <div className='d-flex justify-content-center'>
           <div className='wave'>
             ~~~~~~~~~~
@@ -91,14 +131,10 @@ function App() {
       </div>
 
       <div className='sand'>
-      
+
         <div className='tide'>
 
         </div>
-
-
-
-
 
         <div className='tree-container'>
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>

@@ -49,6 +49,10 @@ code {
     left: -20vw !important;
   }
 
+  #fish-water {
+    width: 10%;
+  }
+
 }
 
 
@@ -138,7 +142,7 @@ code {
   left: 60vw;
   bottom: 55vh;
   animation-name: shake;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
 }
@@ -149,9 +153,9 @@ code {
 
 @keyframes shake {
   0% {
-    transform: rotate(-5deg);
+    transform: rotate(-10deg);
   }
-  5% {
+  15% {
     transform: rotate(0deg);
   }
 }
@@ -289,4 +293,62 @@ code {
     margin-bottom: 0;
 }
 
+
+#fish {
+  height: 5vh;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 20vw;
+  top: 44vh;
+  /* display: none; */
+  animation-name: fish-jump;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#fish-water {
+  position: absolute;
+  left: 20vw;
+  /* width: 5vw; */
+  top: 45vh;
+  color: white;
+  background-color: #2db8c2;
+  z-index: 1000;
+  line-height: 50%;
+  height: 10%;
+}
+
+.fish-jump {
+  animation-name: fish-jump;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fish-jump {
+  0% {
+    /* display: block; */
+    /* top: 0; */
+  }
+
+  25% {
+    top: 25vh;
+  }
+
+  50% {
+    top: 25vh;
+    /* transform: rotate(90deg); */
+  }
+  60% {
+    top: 25vh;
+    /* transform: rotate(90deg); */
+  }
+
+
+
+  100% {
+    display: none;
+    transform: rotate(90deg);
+    /* top: 100vh; */
+  }
+}
 
