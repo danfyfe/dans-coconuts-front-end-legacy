@@ -157,6 +157,7 @@ code {
   }
   15% {
     transform: rotate(0deg);
+    transform: scale(1.05);
   }
 }
 

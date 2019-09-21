@@ -26,17 +26,6 @@ function App() {
       }, 1000)
 
     }, 8000)
-
-    // setInterval(() => {
-    //   fishWater.remove()
-    //   fish.remove()
-    // }, 2500)
-
-
-
-
-
-    // <div id='fish-water' className='fish-water'>~~~</div>
   })
 
   const dropCoconut = () => {
