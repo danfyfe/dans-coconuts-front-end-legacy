@@ -153,10 +153,16 @@ code {
 
 @keyframes shake {
   0% {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
   15% {
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
     transform: rotate(10deg);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
 }
@@ -209,9 +215,13 @@ code {
 @keyframes title-text-appear {
   from {
     top: 0vh;
+    -ms-transform: scale(.25);
+    -webkit-transform: scale(.25);
     transform: scale(.25);
   }
   to {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
