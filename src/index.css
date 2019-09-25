@@ -156,7 +156,7 @@ code {
     transform: rotate(-10deg);
   }
   15% {
-    transform: rotate(0deg);
+    transform: rotate(10deg);
     transform: scale(1.05);
   }
 }
@@ -212,7 +212,7 @@ code {
     transform: scale(.25);
   }
   to {
-
+    transform: scale(1);
   }
 }
 
