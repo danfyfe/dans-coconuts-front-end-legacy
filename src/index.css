@@ -45,9 +45,9 @@ code {
     font-size: 500% !important;
   }
 
-  .flamingo {
+  /* .flamingo {
     left: -20vw !important;
-  }
+  } */
 
   #fish-water {
     width: 10%;
@@ -239,10 +239,10 @@ code {
 }
 
 @keyframes flamingo-enter {
-  from {
+  0% {
     left: -20vw;
   }
-  to {
+  100% {
     left: 10vw;
   }
 }
