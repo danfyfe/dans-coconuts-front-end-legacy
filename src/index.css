@@ -212,6 +212,7 @@ code {
   animation-duration: 0.5s;
 }
 
+
 @keyframes title-text-appear {
   from {
     top: 0vh;
@@ -220,6 +221,7 @@ code {
     transform: scale(.25);
   }
   to {
+    top: -48vh;
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
