@@ -95,8 +95,9 @@ code {
   0% {
     height: 0px;
     border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    /* border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
+    border-bottom: 1px solid transparent;
   }
 
 
