@@ -18,7 +18,6 @@ function App() {
       fishDiv.appendChild(fish)
       setTimeout(() => {
         fish.remove()
-        // fishWater.remove()
       }, 900)
 
       setTimeout(() => {
@@ -48,14 +47,17 @@ function App() {
     rightHalfCoconut.src = 'https://i.imgur.com/r7eQv0P.png'
     rightHalfCoconut.className = 'half-coconut right-half'
 
-    const titleText = document.createElement('span')
-    titleText.innerText = "Dan's Coconuts"
-    titleText.className = 'title-text'
-
+    // const titleText = document.createElement('span')
+    // titleText.innerText = "Dan's Coconuts"
+    // titleText.className = 'title-text'
+    const iframe = document.createElement('iframe')
+    iframe.src = 'https://www.danfyfe.com'
+    iframe.className = 'portfolio'
+    const sky = document.querySelector('.sky')
+    sky.appendChild(iframe)
     treeContainer.appendChild(leftHalfCoconut)
     treeContainer.appendChild(rightHalfCoconut)
-
-    treeContainer.appendChild(titleText)
+    // treeContainer.appendChild(titleText)
 
     fullCoconut.remove()
 
@@ -67,16 +69,7 @@ function App() {
     const flamingo = document.createElement('img')
     flamingo.className='flamingo'
     flamingo.src='https://i.imgur.com/rqRhHlL.png'
-
     sand.appendChild(flamingo)
-    // const speechBubble = document.createElement('div')
-    // speechBubble.className='speech-bubble'
-    // speechBubble.innerText = 'Sup?'
-    //
-    // setTimeout( () => {
-    //   sand.appendChild(speechBubble)
-    // }, 5000)
-
   }
 
   return (
