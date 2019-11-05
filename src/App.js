@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  const [ open, setOpen ] = useState(false)
 
   useEffect(() => {
     const fishDiv = document.querySelector('#fish-div')
@@ -69,14 +71,6 @@ function App() {
     flamingo.src='https://i.imgur.com/rqRhHlL.png'
 
     sand.appendChild(flamingo)
-    // const speechBubble = document.createElement('div')
-    // speechBubble.className='speech-bubble'
-    // speechBubble.innerText = 'Sup?'
-    //
-    // setTimeout( () => {
-    //   sand.appendChild(speechBubble)
-    // }, 5000)
-
   }
 
   return (
