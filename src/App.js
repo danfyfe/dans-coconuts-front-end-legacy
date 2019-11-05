@@ -6,8 +6,11 @@ import './App.css';
 import PortfolioContainer from './containers/PortfolioContainer'
 
 function App() {
+
   library.add(faTimes)
+
   const [ open, setOpen ] = useState()
+  const [ flamingo, setFlamingo ] = useState()
 
   useEffect(() => {
     const fishDiv = document.querySelector('#fish-div')
@@ -73,18 +76,19 @@ function App() {
 
   // commented out for now - not sure flamingo is needed
 
-  // const renderFlamingo = () => {
-  //   const sand = document.querySelector('.sand')
-  //   const flamingo = document.createElement('img')
-  //   flamingo.className='flamingo'
-  //   flamingo.src='https://i.imgur.com/rqRhHlL.png'
-  //
-  //   sand.appendChild(flamingo)
-  // }
+  const renderFlamingo = () => {
+    const sand = document.querySelector('.sand')
+    const flamingo = document.createElement('img')
+    flamingo.className='flamingo'
+    flamingo.src='https://i.imgur.com/rqRhHlL.png'
+
+    sand.appendChild(flamingo)
+  }
 
   return (<>
     <div className='main-wrapper d-flex flex-column'>
-    { open ? <PortfolioContainer setOpen={setOpen}/> : null }
+    { flamingo ? renderFlamingo() : null }
+    { open ? <PortfolioContainer setOpen={setOpen} setFlamingo={setFlamingo}/> : null }
       <div className='sky'>
 
         <div className='sun'/>
