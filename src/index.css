@@ -19,8 +19,8 @@ code {
 }
 
 #coconut {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -203,27 +203,29 @@ code {
 
 .portfolio-container {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 3vh auto;
   z-index: 9999;
+  animation-name: title-text-appear;
+  animation-duration: 0.5s;
 }
 
-.portfolio-background {
+/* .portfolio-background {
   background-color: #f2f5de;
   height: 100vh;
   width: 100%;
   opacity: 0.25;
-}
+} */
 
 .title-text {
   font-family: gilligan;
   font-size: 200%;
   width: 100%;
-  animation-name: title-text-appear;
-  animation-duration: 0.5s;
+  /* animation-name: title-text-appear;
+  animation-duration: 0.5s; */
   text-align: center;
   /* top: 5vh; */
   /* top: -48vh;
@@ -233,6 +235,7 @@ code {
 
 .p-text-container {
   background-color: #f2f5de;
+  width: 90%;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -241,9 +244,60 @@ code {
 
 .p-text {
   padding: 1%;
-  animation-name: title-text-appear;
-  animation-duration: 0.5s;
+  text-align: center;
 }
+
+.project-selector {
+  margin-bottom: 3vh;
+}
+
+.project-selector:hover {
+  cursor: pointer;
+}
+
+.project-selector-coconut {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+
+
+.project-selector-text {
+  font-family: gilligan;
+  text-align: center;
+}
+
+.project-display {
+  width: 80%;
+  /* border-left: 1px solid lightgrey; */
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.project-name {
+  margin: 2vw;
+}
+
+.project-img {
+  max-width: 75%;
+  margin: 2vh auto 0 auto;
+}
+
+.project-languages {
+  margin: 0 auto;
+  max-width: 50%;
+  font-size: 75%;
+  color: #7D7D7D;
+}
+
+.project-links {
+  padding: 1vh;
+}
+
+.project-link {
+  padding: 1vw;
+}
+
 
 
 @keyframes title-text-appear {

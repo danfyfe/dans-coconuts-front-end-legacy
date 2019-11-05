@@ -9,7 +9,7 @@ function App() {
 
   library.add(faTimes)
 
-  const [ open, setOpen ] = useState()
+  const [ open, setOpen ] = useState(true)
   const [ flamingo, setFlamingo ] = useState()
 
   useEffect(() => {
