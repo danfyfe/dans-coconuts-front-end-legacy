@@ -87,8 +87,12 @@ function App() {
 
   return (<>
     <div className='main-wrapper d-flex flex-column'>
+
     { flamingo ? renderFlamingo() : null }
-    { open ? <PortfolioContainer setOpen={setOpen} setFlamingo={setFlamingo}/> : null }
+
+    { open ?
+      <PortfolioContainer setOpen={setOpen} setFlamingo={setFlamingo}/> : null }
+
       <div className='sky'>
 
         <div className='sun'/>
@@ -134,7 +138,9 @@ function App() {
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
           <img id='full-coconut' className='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut' onClick={dropCoconut}/>
         </div>
+
       </div>
+      <div className='more-sand'/>
 
     </div>
 

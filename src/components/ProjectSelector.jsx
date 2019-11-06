@@ -21,13 +21,8 @@ const ProjectSelector = props => {
     }
 
   return(<>
-    <div className='d-flex justify-content-around'>
-
+    <div className='row'>
       { renderProjectCards()}
-
-
-
-
     </div>
   </>)
 }

@@ -5,7 +5,7 @@ const ProjectDisplay = props => {
   const { name, imageUrl, description, languages, gitHubFrontEnd, gitHubBackEnd, demoUrl, live } = project
 
   return(<>
-    <div className='container project-display'>
+    <div className='container project-display' title={name} id={name}>
 
       <div className='text-center'>
         <h1>{name}</h1>
