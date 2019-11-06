@@ -129,7 +129,7 @@ code {
 .more-sand {
   position: relative;
   background-color: #edd793;
-  height: 150vh;
+  height: 200vh;
 }
 
 .tree-container {
@@ -220,7 +220,31 @@ code {
 }
 
 @media only screen and (max-width: 570px) {
+  .project-selector {
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .project-selector:hover {
+    cursor: pointer;
+  }
+
+  .project-selector-coconut {
+    height: 30px !important;
+    width: 30px !important;
+    margin: auto;
+  }
+
+  .project-selector-coconut:hover {
+    transform: rotate(15deg)
+  }
+
+  .project-selector-text {
+    font-family: gilligan;
+    text-align: center;
+    font-size: 75% !important;
+  }
 
 }
 
@@ -258,8 +282,14 @@ code {
   text-align: center;
 }
 
+.times:hover {
+  cursor: pointer;
+}
+
 .project-selector {
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 .project-selector:hover {
@@ -272,21 +302,27 @@ code {
   margin: auto;
 }
 
+.project-selector-coconut:hover {
+  transform: rotate(15deg)
+}
+
 
 .project-selector-text {
   font-family: gilligan;
   text-align: center;
+  padding-top: 1%;
 }
 
 .project-display {
-  width: 80%;
+  width: 100%;
   /* border-left: 1px solid lightgrey; */
   text-align: center;
   margin-bottom: 3vh;
 }
 
 .project-name {
-  margin: 2vw;
+  /* margin: 2vw; */
+  font-family: gilligan;
 }
 
 .project-img {
@@ -302,11 +338,16 @@ code {
 }
 
 .project-links {
-  padding: 1vh;
+  padding: 0.5vh 0;
+  font-size: 90%;
 }
 
 .project-link {
   padding: 1vw;
+}
+
+.project-description {
+
 }
 
 
@@ -453,8 +494,6 @@ code {
     top: 25vh;
     /* transform: rotate(90deg); */
   }
-
-
 
   100% {
     display: none;

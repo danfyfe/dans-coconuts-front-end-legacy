@@ -9,7 +9,7 @@ function App() {
 
   library.add(faTimes)
 
-  const [ open, setOpen ] = useState(true)
+  const [ open, setOpen ] = useState()
   const [ flamingo, setFlamingo ] = useState()
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
       }, 1000)
 
     }, 8000)
-  })
+  }, [])
 
   const dropCoconut = () => {
     const fullCoconut = document.querySelector('.full-coconut')
@@ -64,7 +64,7 @@ function App() {
 
     fullCoconut.remove()
 
-    // title text and flamingo removed for now
+    // title text and flamingo moved for now
 
     // const titleText = document.createElement('span')
     // titleText.innerText = "Welome to Dan's Coconuts"

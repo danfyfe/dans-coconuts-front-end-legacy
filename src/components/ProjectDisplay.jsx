@@ -5,10 +5,10 @@ const ProjectDisplay = props => {
   const { name, imageUrl, description, languages, gitHubFrontEnd, gitHubBackEnd, demoUrl, live } = project
 
   return(<>
-    <div className='container project-display' title={name} id={name}>
+    <div className='project-display' title={name} id={name}>
 
       <div className='text-center'>
-        <h1>{name}</h1>
+        <h2 className='project-name'>{name}</h2>
       </div>
 
       <hr width={'80%'}/>

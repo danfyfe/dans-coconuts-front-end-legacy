@@ -21,7 +21,7 @@ const ProjectSelector = props => {
     }
 
   return(<>
-    <div className='row'>
+    <div id='selector-row' className='row'>
       { renderProjectCards()}
     </div>
   </>)
