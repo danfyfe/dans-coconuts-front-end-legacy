@@ -19,8 +19,8 @@ code {
 }
 
 #coconut {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -126,6 +126,12 @@ code {
   height: 45vh;
 }
 
+.more-sand {
+  position: relative;
+  background-color: #edd793;
+  height: 200vh;
+}
+
 .tree-container {
 }
 
@@ -201,27 +207,160 @@ code {
   transform: rotate(-90deg);
 }
 
-.title-text {
-  font-family: gilligan;
-  font-size: 200%;
-  text-align: center;
+.portfolio-container {
   position: absolute;
-  top: -48vh;
-  left: 40vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto;
+  z-index: 9999;
   animation-name: title-text-appear;
   animation-duration: 0.5s;
 }
 
+@media only screen and (max-width: 570px) {
+  .project-selector {
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-selector:hover {
+    cursor: pointer;
+  }
+
+  .project-selector-coconut {
+    height: 30px !important;
+    width: 30px !important;
+    margin: auto;
+  }
+
+  .project-selector-coconut:hover {
+    transform: rotate(15deg)
+  }
+
+  .project-selector-text {
+    font-family: gilligan;
+    text-align: center;
+    font-size: 75% !important;
+  }
+
+}
+
+/* .portfolio-background {
+  background-color: #f2f5de;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.25;
+} */
+
+.title-text {
+  font-family: gilligan;
+  font-size: 200%;
+  width: 100%;
+  text-align: center;
+  /* animation-name: title-text-appear;
+  animation-duration: 0.5s; */
+  /* top: 5vh; */
+  /* top: -48vh;
+  left: 40vw; */
+  /* position: absolute; */
+}
+
+.p-text-container {
+  background-color: #f2f5de;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.p-text {
+  padding: 1%;
+  text-align: center;
+}
+
+.times:hover {
+  cursor: pointer;
+}
+
+.project-selector {
+  margin-bottom: 2vh;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.project-selector:hover {
+  cursor: pointer;
+}
+
+.project-selector-coconut {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+
+.project-selector-coconut:hover {
+  transform: rotate(15deg)
+}
+
+
+.project-selector-text {
+  font-family: gilligan;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.project-display {
+  width: 100%;
+  /* border-left: 1px solid lightgrey; */
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.project-name {
+  /* margin: 2vw; */
+  font-family: gilligan;
+}
+
+.project-img {
+  max-width: 75%;
+  margin: 2vh auto 0 auto;
+}
+
+.project-languages {
+  margin: 0 auto;
+  max-width: 50%;
+  font-size: 75%;
+  color: #7D7D7D;
+}
+
+.project-links {
+  padding: 0.5vh 0;
+  font-size: 90%;
+}
+
+.project-link {
+  padding: 1vw;
+}
+
+.project-description {
+
+}
+
+
 
 @keyframes title-text-appear {
   from {
-    top: 0vh;
+    /* top: 0vh; */
     -ms-transform: scale(.25);
     -webkit-transform: scale(.25);
     transform: scale(.25);
   }
   to {
-    top: -48vh;
+    /* top: -48vh; */
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -355,8 +494,6 @@ code {
     top: 25vh;
     /* transform: rotate(90deg); */
   }
-
-
 
   100% {
     display: none;

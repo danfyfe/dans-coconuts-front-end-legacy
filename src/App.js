@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+
 import './App.css';
+import PortfolioContainer from './containers/PortfolioContainer'
 
 function App() {
 
-  const [ open, setOpen ] = useState(false)
+  library.add(faTimes)
+
+  const [ open, setOpen ] = useState()
+  const [ flamingo, setFlamingo ] = useState()
 
   useEffect(() => {
     const fishDiv = document.querySelector('#fish-div')
@@ -28,7 +35,7 @@ function App() {
       }, 1000)
 
     }, 8000)
-  })
+  }, [])
 
   const dropCoconut = () => {
     const fullCoconut = document.querySelector('.full-coconut')
@@ -50,19 +57,24 @@ function App() {
     rightHalfCoconut.src = 'https://i.imgur.com/r7eQv0P.png'
     rightHalfCoconut.className = 'half-coconut right-half'
 
-    const titleText = document.createElement('span')
-    titleText.innerText = "Dan's Coconuts"
-    titleText.className = 'title-text'
 
     treeContainer.appendChild(leftHalfCoconut)
     treeContainer.appendChild(rightHalfCoconut)
 
-    treeContainer.appendChild(titleText)
 
     fullCoconut.remove()
 
-    renderFlamingo()
+    // title text and flamingo moved for now
+
+    // const titleText = document.createElement('span')
+    // titleText.innerText = "Welome to Dan's Coconuts"
+    // titleText.className = 'title-text'
+    // treeContainer.appendChild(titleText)
+    // renderFlamingo()
+    setOpen(true)
   }
+
+  // commented out for now - not sure flamingo is needed
 
   const renderFlamingo = () => {
     const sand = document.querySelector('.sand')
@@ -73,13 +85,17 @@ function App() {
     sand.appendChild(flamingo)
   }
 
-  return (
+  return (<>
     <div className='main-wrapper d-flex flex-column'>
+
+    { flamingo ? renderFlamingo() : null }
+
+    { open ?
+      <PortfolioContainer setOpen={setOpen} setFlamingo={setFlamingo}/> : null }
+
       <div className='sky'>
 
-        <div className='sun'>
-
-        </div>
+        <div className='sun'/>
 
       </div>
 
@@ -115,19 +131,20 @@ function App() {
 
       <div className='sand'>
 
-        <div className='tide'>
+        <div className='tide'/>
 
-        </div>
 
         <div className='tree-container'>
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
           <img id='full-coconut' className='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut' onClick={dropCoconut}/>
         </div>
+
       </div>
+      <div className='more-sand'/>
 
     </div>
 
-  );
+  </>);
 }
 
 export default App;
