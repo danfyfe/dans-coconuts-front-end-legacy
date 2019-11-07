@@ -7,11 +7,13 @@ const ProjectDisplay = props => {
   return(<>
     <div className='project-display' title={name} id={name}>
 
+      <hr width={'80%'}/>
+
       <div className='text-center'>
         <h2 className='project-name'>{name}</h2>
       </div>
 
-      <hr width={'80%'}/>
+      
 
       <img alt={name + 'demo image'} src={imageUrl} className='project-img'/>
 

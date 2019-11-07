@@ -287,8 +287,8 @@ code {
 }
 
 .project-selector {
-  margin-bottom: 2vh;
-    margin-left: auto;
+  margin-bottom: 1vh;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -321,7 +321,7 @@ code {
 }
 
 .project-name {
-  /* margin: 2vw; */
+  margin-top: 3vh;
   font-family: gilligan;
 }
 
@@ -332,13 +332,14 @@ code {
 
 .project-languages {
   margin: 0 auto;
+  padding: 0.5vh 0;
   max-width: 50%;
   font-size: 75%;
   color: #7D7D7D;
 }
 
 .project-links {
-  padding: 0.5vh 0;
+  padding: 1vh 0 0 0;
   font-size: 90%;
 }
 
