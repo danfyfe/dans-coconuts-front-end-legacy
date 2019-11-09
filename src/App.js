@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
 import PortfolioContainer from './containers/PortfolioContainer'
 
 function App() {
 
-  library.add(faTimes)
+  library.add(faTimes, fab)
 
   const [ open, setOpen ] = useState()
   const [ flamingo, setFlamingo ] = useState()
@@ -136,7 +137,9 @@ function App() {
 
         <div className='tree-container'>
           <img id='coconut-tree' src='https://i.imgur.com/LQlH63o.png' alt='cartoon coconut tree'/>
-          <img id='full-coconut' className='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut' onClick={dropCoconut}/>
+
+            <img id='full-coconut' className='full-coconut' src='https://i.imgur.com/Xv80fwu.png' alt='full coconut' onClick={dropCoconut}/>
+
         </div>
 
       </div>
