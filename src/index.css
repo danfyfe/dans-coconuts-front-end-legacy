@@ -157,6 +157,52 @@ code {
   cursor: pointer;
 }
 
+.coconut-blur {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  left: 52vw;
+  bottom: 50vh;
+  background-color: cornsilk;
+  border-radius: 50%;
+}
+
+/* .coconut-ray {
+  position: absolute;
+  background-color: cornsilk;
+  filter: blur(1px);
+  border-radius: 20px;
+  height: 0.25vh;
+  width: 2vw;
+  z-index: 9999;
+}
+
+.one {
+  left: 60vw;
+  bottom: 55vh;
+  transform: rotate(25deg)
+}
+
+.two {
+  left: 55vw;
+  bottom: 53vh;
+  transform: rotate(90deg)
+}
+
+.three {
+  left: 50vw;
+  bottom: 55vh;
+  transform: rotate(125deg)
+}
+
+.four {
+
+}
+
+.five {
+
+} */
+
 @keyframes shake {
   0% {
     -ms-transform: rotate(-10deg);
@@ -217,6 +263,22 @@ code {
   z-index: 9999;
   animation-name: title-text-appear;
   animation-duration: 0.5s;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.link-icon {
+  padding: 0 5%;
+  color: slategray;
+  font-size: 1.5em;
+}
+
+.link-icon:hover {
+  color: lightgrey;
 }
 
 @media only screen and (max-width: 570px) {
