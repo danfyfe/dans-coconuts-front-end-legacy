@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProjectSelector from '../components/ProjectSelector'
 import ProjectDisplay from '../components/ProjectDisplay'
 import LinksContainer from './LinksContainer'
+import ContactContainer from './ContactContainer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PortfolioContainer = props => {
@@ -27,6 +28,7 @@ const PortfolioContainer = props => {
         <p className='p-text'>Greetings! My name is <strong>Dan Fyfe</strong> and I am a New York based Full Stack Web Developer with experience in Ruby on Rails, JavaScript and React. I ventured into programming after working as a recording engineer where creative, simple solutions to complex problems are always best. I love to learn and am excited to take my experiences and apply them to new problems as part of a team.</p>
 
         <LinksContainer/>
+        <ContactContainer/>
 
         <hr width={'80%'}/>
         <p className='p-text'>Feel free to grab a coconut and check out my projects below or close this window and enjoy the view!</p>

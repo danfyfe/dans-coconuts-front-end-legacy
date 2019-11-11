@@ -281,6 +281,19 @@ code {
   color: lightgrey;
 }
 
+.contact-container {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.contact-link {
+  color:  #4183c4;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 570px) {
   .project-selector {
     margin-bottom: 2vh;
