@@ -132,8 +132,6 @@ code {
   height: 200vh;
 }
 
-.tree-container {
-}
 
 #coconut-tree {
   height: 50vh;
@@ -421,11 +419,6 @@ code {
 .project-link {
   padding: 1vw;
 }
-
-.project-description {
-
-}
-
 
 
 @keyframes title-text-appear {
