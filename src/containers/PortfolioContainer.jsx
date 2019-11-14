@@ -25,7 +25,7 @@ const PortfolioContainer = props => {
         }>
           <FontAwesomeIcon icon='times'/>
         </div>
-        <p className='p-text'>Greetings! My name is <strong>Dan Fyfe</strong> and I am a New York based Full Stack Web Developer with experience in Ruby on Rails, JavaScript and React. I ventured into programming after working as a recording engineer where creative, simple solutions to complex problems are always best. I love to learn and am excited to take my experiences and apply them to new problems as part of a team.</p>
+        <p className='p-text'>Greetings! My name is <strong>Dan Fyfe</strong> and I am a New York based Full Stack Web Developer with a passion for rich, intuitive UIs and experience in Ruby on Rails, JavaScript and React. I ventured into programming after working as a recording engineer where creative, simple solutions to complex problems are always best. I love to learn and am excited to take my experiences and apply them to new problems as part of a team.</p>
 
         <LinksContainer/>
         <ContactContainer/>

@@ -31,6 +31,10 @@ code {
     left: 53vw !important;
   }
 
+  #curvedarrow {
+    left: 53vw !important;
+  }
+
   .left-half {
     left: 48vw !important;
   }
@@ -165,40 +169,40 @@ code {
   border-radius: 50%;
 }
 
-/* .coconut-ray {
+/* #curvedarrow {
   position: absolute;
-  background-color: cornsilk;
-  filter: blur(1px);
-  border-radius: 20px;
-  height: 0.25vh;
-  width: 2vw;
-  z-index: 9999;
-}
-
-.one {
+  bottom: 65vh;
   left: 60vw;
-  bottom: 55vh;
-  transform: rotate(25deg)
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 9px solid #5e4601e7;
+  transform: rotate(10deg);
+  animation-name: move-arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-.two {
-  left: 55vw;
-  bottom: 53vh;
-  transform: rotate(90deg)
+#curvedarrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid #5e4601e7;
+  border-radius: 20px 0 0 0;
+  top: -12px;
+  left: -9px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
 }
 
-.three {
-  left: 50vw;
-  bottom: 55vh;
-  transform: rotate(125deg)
-}
-
-.four {
-
-}
-
-.five {
-
+@keyframes move-arrow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
 } */
 
 @keyframes shake {
