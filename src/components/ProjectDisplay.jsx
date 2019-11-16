@@ -13,7 +13,6 @@ const ProjectDisplay = props => {
         <h2 className='project-name'>{name}</h2>
       </div>
 
-      
 
       <img alt={name + 'demo image'} src={imageUrl} className='project-img'/>
 

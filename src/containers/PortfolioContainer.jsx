@@ -5,6 +5,7 @@ import LinksContainer from './LinksContainer'
 import ContactContainer from './ContactContainer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const PortfolioContainer = props => {
 
   const { setOpen, setFlamingo } = props
