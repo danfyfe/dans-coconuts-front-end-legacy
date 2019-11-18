@@ -86,8 +86,15 @@ function App() {
     sand.appendChild(flamingo)
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0
+    })
+  }
+
   return (<>
     <div className='main-wrapper d-flex flex-column'>
+      {scrollToTop()}
 
     { flamingo ? renderFlamingo() : null }
 
