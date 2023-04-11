@@ -26,13 +26,18 @@ const PortfolioContainer = props => {
         }>
           <FontAwesomeIcon icon='times'/>
         </div>
-        <p className='p-text'>Greetings! My name is <strong>Dan Fyfe</strong> and I am a New York based Full Stack Web Developer with a passion for rich, intuitive UIs and experience in Ruby on Rails, JavaScript and React. I ventured into programming after working as a recording engineer where creative, simple solutions to complex problems are always best. I love to learn and am excited to take my experiences and apply them to new problems as part of a team.</p>
+        <p className='p-text'>
+          Greetings! My name is <strong>Dan Fyfe </strong> 
+           and I am a Software Engineer passionate about simple, creative solutions to complex problems with 4 years of development experience. With my background in the e-commerce marketplace sector reaching millions of users, I have a proven track record of quickly learning and adapting while working closely with product and design teams to deliver high-quality software that meets business objectives and brings value to the team. I thrive on challenging projects that allow me to stretch my skills and expertise to deliver innovative solutions, while my experience with JavaScript, React, NextJS, and NodeJS, accompanied by my technical design and documentation skills, makes me a valuable addition to any software engineering team.
+        </p>
 
         <LinksContainer/>
         <ContactContainer/>
 
         <hr width={'80%'}/>
-        <p className='p-text'>Feel free to grab a coconut and check out my projects below or close this window and enjoy the view!</p>
+        <p className='p-text'>
+          I am currently modernizing and updating this site with some exciting new features, but for now, feel free to grab a coconut and check out some projects from my days at Flatiron School below or close this window and enjoy the view!
+        </p>
 
         <ProjectSelector setProject={setProject}/>
 

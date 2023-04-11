@@ -10,9 +10,6 @@ const LinksContainer = props => {
             <a className='link-icon' href='https://github.com/danfyfe' target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon icon={['fab', 'github']}/>
             </a>
-            <a className='link-icon' href='https://medium.com/@danfyfe' target='_blank' rel='noopener noreferrer'>
-                <FontAwesomeIcon icon={['fab','medium']}/>
-            </a>
         </div>
     )
 }
