@@ -27,8 +27,8 @@ const PortfolioContainer = props => {
           <FontAwesomeIcon icon='times'/>
         </div>
         <p className='p-text'>
-          Greetings! My name is <strong>Dan Fyfe </strong> 
-           and I am a Software Engineer passionate about simple, creative solutions to complex problems with 4 years of development experience. With my background in the e-commerce marketplace sector reaching millions of users, I have a proven track record of quickly learning and adapting while working closely with product and design teams to deliver high-quality software that meets business objectives and brings value to the team. I thrive on challenging projects that allow me to stretch my skills and expertise to deliver innovative solutions, while my experience with JavaScript, React, NextJS, and NodeJS, accompanied by my technical design and documentation skills, makes me a valuable addition to any software engineering team.
+          Greetings! My name is <strong>Dan Fyfe</strong> 
+           and I am a user-focused Software Engineer passionate about simple, creative solutions to complex problems. With my background in the e-commerce marketplace sector reaching millions of users, I have a proven track record of quickly learning and adapting while working closely with product and design teams to deliver high-quality software that meets business objectives and brings value to the team. I thrive on challenging projects that allow me to stretch my skills and expertise to deliver innovative solutions, while my experience with JavaScript, React, Next.js, and Node, accompanied by my technical design and documentation skills, makes me a valuable addition to any software engineering team.
         </p>
 
         <LinksContainer/>

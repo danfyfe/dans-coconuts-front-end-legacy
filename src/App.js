@@ -75,8 +75,6 @@ function App() {
     setOpen(true)
   }
 
-  // commented out for now - not sure flamingo is needed
-
   const renderFlamingo = () => {
     const sand = document.querySelector('.sand')
     const flamingo = document.createElement('img')
