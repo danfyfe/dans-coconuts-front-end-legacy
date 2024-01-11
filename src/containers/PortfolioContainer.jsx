@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import ProjectSelector from '../components/ProjectSelector'
-import ProjectDisplay from '../components/ProjectDisplay'
+import React from 'react'
+// import ProjectSelector from '../components/ProjectSelector'
+// import ProjectDisplay from '../components/ProjectDisplay'
 import LinksContainer from './LinksContainer'
 import ContactContainer from './ContactContainer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const PortfolioContainer = props => {
 
   const { setOpen, setFlamingo } = props
-  const [ project, setProject ] = useState()
+  // const [ project, setProject ] = useState()
 
   return(<>
     <div className='portfolio-container'>
@@ -33,7 +33,7 @@ const PortfolioContainer = props => {
 
         <LinksContainer/>
         <ContactContainer/>
-
+{/* 
         <hr width={'80%'}/>
         <p className='p-text'>
           I am currently modernizing and updating this site with some exciting new features, but for now, feel free to grab a coconut and check out some projects from my days at Flatiron School below or close this window and enjoy the view!
@@ -42,7 +42,7 @@ const PortfolioContainer = props => {
         <ProjectSelector setProject={setProject}/>
 
 
-        { project ? <ProjectDisplay project={project}/> : null }
+        { project ? <ProjectDisplay project={project}/> : null } */}
       </div>
     </div>
   </>)
